@@ -1,0 +1,155 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(29, 27, 27, 0.7); /* Fondo oscuro translúcido */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Contenido del modal */
+.modalContent {
+  width: 400px;
+  max-width: 90%;
+  text-align: left;
+  background-color: #2c2c2c;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Encabezado del modal */
+.modalContent h2 {
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center; /* Centrar título */
+}
+
+/* Inputs del formulario */
+.modalContent input[type="text"],
+.modalContent input[type="email"],
+.modalContent input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #fff; /* Asegurarse de que el fondo del input sea blanco */
+  box-sizing: border-box;
+  color: #2c2c2c;
+}
+
+.modalContent input:focus {
+  border-color: #4caf50; /* Cambia el borde al verde al enfocar */
+  outline: none;
+}
+
+/* Contenedor del slider de disponibilidad */
+.sliderContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* Botones */
+.modalContent button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px; /* Separar botones */
+  width: 100px;
+}
+
+.modalButtonsContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modalContent button.save {
+  background-color: #4caf50;
+  color: white;
+}
+
+.modalContent button.save:hover {
+  background-color: #45a049; /* Verde más oscuro al pasar el cursor */
+}
+
+.modalContent button.danger {
+  background-color: #f44336;
+  color: white;
+}
+
+.modalContent button.danger:hover {
+  background-color: #e53935; /* Rojo más oscuro al pasar el cursor */
+}
+
+.modalContent button.cancel {
+  background-color: #cccccc;
+  color: #2c2c2c;
+}
+
+.modalContent button.cancel:hover {
+  background-color: #b0b0b0;
+}
+
+/* Estilos para el panel flotante de confirmación */
+.confirmOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.confirmDialog {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  color: black;
+}
+
+.confirmDialog button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.confirmDialog button:first-of-type {
+  background-color: #4caf50;
+  color: white;
+  margin-right: 10px;
+}
+
+.confirmDialog button:first-of-type:hover {
+  background-color: #45a049;
+}
+
+.confirmDialog button:last-of-type {
+  background-color: #f44336;
+  color: white;
+}
+
+.confirmDialog button:last-of-type:hover {
+  background-color: #e53935;
+}

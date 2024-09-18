@@ -1,0 +1,104 @@
+{
+  "empleados": [
+    {
+      "id": "1",
+      "name": "Lara Larita",
+      "email": "laralarita01@gmail.com",
+      "phone": "2476123415",
+      "especialidad": "Diseñadora Gráfica",
+      "disponibilidad": false
+    },
+    {
+      "id": "2",
+      "name": "Carlos Perez",
+      "email": "carlosperez02@gmail.com",
+      "phone": "2476123416",
+      "especialidad": "Ingeniero de Software",
+      "disponibilidad": true
+    },
+    {
+      "id": "3",
+      "name": "Maria Gonzalez",
+      "email": "mariagonzalez03@gmail.com",
+      "phone": "2476123417",
+      "especialidad": "Analista de Datos",
+      "disponibilidad": true
+    },
+    {
+      "id": "4",
+      "name": "Juan Martinez",
+      "email": "juanmartinez04@gmail.com",
+      "phone": "2476123418",
+      "especialidad": "Administrador de Redes",
+      "disponibilidad": false
+    },
+    {
+      "id": "5",
+      "name": "Sofia Ramirez",
+      "email": "sofiaramirez05@gmail.com",
+      "phone": "2476123419",
+      "especialidad": "Diseñadora UX/UI",
+      "disponibilidad": true
+    },
+    {
+      "id": "6",
+      "name": "Pedro Gomez",
+      "email": "pedrogomez06@gmail.com",
+      "phone": "2476123420",
+      "especialidad": "Desarrollador Web",
+      "disponibilidad": true
+    },
+    {
+      "id": "7",
+      "name": "Ana Torres",
+      "email": "anatorres07@gmail.com",
+      "phone": "2476123421",
+      "especialidad": "Especialista en Marketing Digital",
+      "disponibilidad": true
+    },
+    {
+      "id": "8",
+      "name": "Luis Herrera",
+      "email": "luisherrera08@gmail.com",
+      "phone": "2476123422",
+      "especialidad": "Ingeniero DevOps",
+      "disponibilidad": true
+    },
+    {
+      "id": "9",
+      "name": "Carmen Morales",
+      "email": "carmenmorales09@gmail.com",
+      "phone": "2476123423",
+      "especialidad": "Consultora de Recursos Humanos",
+      "disponibilidad": false
+    },
+    {
+      "id": "10",
+      "name": "Roberto Lopez",
+      "email": "robertolopez10@gmail.com",
+      "phone": "2476123424",
+      "especialidad": "Arquitecto de Software",
+      "disponibilidad": false
+    },
+    {
+      "id": "d291",
+      "name": "jorgito rey",
+      "email": "jorgitorey@gmail.com",
+      "phone": "2323232",
+      "especialidad": "hace lo q puede",
+      "disponibilidad": true
+    }
+  ],
+  "admins": [
+    {
+      "name": "Martin Ramirez",
+      "user": "MRamirez@worka.waw",
+      "password": "12345"
+    },
+    {
+      "name": "Anonimus el jaker [O_o] ",
+      "user": "admin@a",
+      "password": "admin"
+    }
+  ]
+}

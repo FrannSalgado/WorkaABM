@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap");
+
+.navbar {
+  background-color: #1f1f1f;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.logoIcon {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  color: #ffffff;
+  font-family: "Playwrite CU", cursive;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.logo a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navLinks {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navLinks li {
+  display: inline;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.navLinks a:hover {
+  background-color: #333;
+  color: #4caf50;
+}
+
+.logoutButton {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.logoutButton:hover {
+  background-color: #e53935;
+}
+
+@media (max-width: 768px) {
+  .navLinks {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

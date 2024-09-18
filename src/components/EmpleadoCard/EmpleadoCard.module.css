@@ -1,0 +1,68 @@
+.card {
+  background-color: #2c2c2c;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  height: 100px;
+  width: 380px;
+}
+
+.status {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.statusCircle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.green {
+  background-color: #4caf50;
+}
+
+.red {
+  background-color: #f44336;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.email {
+  font-size: 14px;
+  color: #aaaaaa;
+}
+
+.detailsButton {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.detailsButton:hover {
+  background-color: #ffffff;
+  color: #2c2c2c;
+}
