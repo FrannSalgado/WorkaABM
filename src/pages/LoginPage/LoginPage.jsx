@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./LoginPage.css";
 import { useForm } from "../../hooks";
 import { Navigate, useNavigate } from "react-router-dom";
@@ -8,11 +8,36 @@ import { useAuth } from "../../context/AuthContext";
 const LoginPage = () => {
   const { login } = useAuth();
   const navigate = useNavigate();
+  const [error, setError] = useState(null);
 
-  const submitForm = (e) => {
+  const submitForm = async (e) => {
     e.preventDefault();
-    login();
-    navigate("/home");
+
+    try {
+      const response = await fetch(
+        `http://localhost:3000/admins?user=${values.email}`
+      );
+      const admins = await response.json();
+
+      if (admins.length === 0) {
+        setError("Usuario no encontrado");
+        return;
+      }
+
+      const admin = admins[0];
+
+      if (admin.password !== values.password) {
+        setError("Contraseña incorrecta");
+        return;
+      }
+
+      login();
+      localStorage.setItem("token", "admin-auth-token");
+      navigate("/home");
+    } catch (error) {
+      console.error("Error durante la autenticación", error);
+      setError("Error al iniciar sesión");
+    }
   };
 
   const { values, handleChange, handleSubmit } = useForm(
@@ -50,6 +75,9 @@ const LoginPage = () => {
             required
           />
         </div>
+
+        {error && <p className="error">{error}</p>}
+
         <button type="submit">Login</button>
       </form>
     </div>
